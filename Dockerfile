@@ -11,4 +11,4 @@ COPY . .
 RUN pip install -r requirements.txt
 
 
-EXPOSE 8001
+EXPOSE 80
