@@ -1,7 +1,8 @@
-import FastApi
+from typing import Union
 
-app = FastApi()
+from fastapi import FastAPI
+app = FastAPI()
 
-@app.get("/")
-def helloWorld():
-    return{"message":"hello world"}
+@app.get("/{name}")
+def helloName(name):
+    return {"message": f"hello {name}"}
