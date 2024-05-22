@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  fast-api:
+    build: .
+    container_name: fast_api
+    ports:
+      - "8001:8001"
+    command: "fastapi run main.py --port 80"
